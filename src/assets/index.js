@@ -1,5 +1,5 @@
-import html from "./html";
-import css from "./css";
-import hide from "./hide";
+import html from "./html.svg";
+import css from "./css.svg";
+import js from "./js.svg";
 
-export { hide, html, css };
+export { html, css, js };

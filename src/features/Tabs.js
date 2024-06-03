@@ -1,4 +1,4 @@
-import { html, hide, css } from "../assets/index";
+import { html, css, js } from "../assets";
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
@@ -20,9 +20,9 @@ const initialState = [
     buttonContent: "CSS",
     code: `body{
             font-family:roboto, sans-serif,
-            padding:25px,
-            color:#111,
-            background-color:#f1f1f1,
+            padding: 25px,
+            color: #111,
+            background-color: #f1f1f1,
         }
         `,
   },
