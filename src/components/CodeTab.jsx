@@ -1,8 +1,15 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { updateCode } from "../features/Tabs";
 
-const CodeTab = () => {
+const CodeTab = ({ code, id }) => {
+  const tabsState = useSelector((state) => state.tabs);
+  //const dispatch = useDispatch();
+  console.log(tabsState);
+  //dispatch(updateCode(text));
   return (
     <textarea
+      value={code}
       spellCheck="false"
       className="bg-zinc-900 text-slate-200 text-xl p-8 block h-full w-full focus:outline-none resize-none"
     ></textarea>
