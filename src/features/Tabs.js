@@ -23,7 +23,7 @@ const initialState = [
             padding: 25px,
             color: #111,
             background-color: #f1f1f1,
-        }
+          }
         `,
   },
   {

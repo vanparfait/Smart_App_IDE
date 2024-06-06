@@ -1,12 +1,12 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { updateCode } from "../features/Tabs";
 
 const CodeTab = ({ code, id }) => {
   const tabsState = useSelector((state) => state.tabs);
-  //const dispatch = useDispatch();
+
   console.log(tabsState);
-  //dispatch(updateCode(text));
+
   return (
     <textarea
       value={code}
