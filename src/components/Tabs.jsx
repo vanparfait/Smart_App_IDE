@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CodeTab from "./CodeTab";
 import ButtonTabs from "./ButtonTabs";
 import { useSelector } from "react-redux";
+import Preview from "./Preview";
 
 const Tabs = () => {
   const tabs = useSelector((state) => state.tabs);
@@ -25,6 +26,7 @@ const Tabs = () => {
           id={tabIndex}
           code={tabs.find((obj) => obj.id === tabIndex).code}
         />
+        <Preview />
       </div>
     </div>
   );
